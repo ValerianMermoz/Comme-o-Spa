@@ -1,0 +1,25 @@
+.carousel {
+  position: relative;
+}
+
+.carousel .overlay {
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+  right: 30%;
+  transform: translateY(-50%);
+}
+
+.carousel .overlay__title {
+  font-size: 48px;
+}
+
+.carousel .overlay__text {
+  font-size: 24px;
+}
+
+.imgcarousel {
+  -webkit-filter: grayscale(100%); 
+  background-size: cover;
+  filter: grayscale(100%);
+}

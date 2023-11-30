@@ -1,0 +1,44 @@
+.Footer {
+  background-color: #c7a082;
+  & .iconesfooter {
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    & .iconef {
+      width: 90px;
+    }
+
+    & p {
+      font-size: 22px;
+    }
+  }
+  .imgfooter {
+    position: relative;
+    background-image: url("https://i.goopics.net/61x66n.jpg");
+
+    /* Une hauteur variable */
+    height: 100vh;
+
+    /* L'effet de parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: sepia (70%);
+    filter: sepia(70%);
+    box-shadow: 10px 10px 36px 15px rgba(207, 138, 110, 0.82) inset;
+    -webkit-box-shadow: 10px 10px 36px 15px rgba(207, 138, 110, 0.82) inset;
+    -moz-box-shadow: 10px 10px 36px 15px rgba(207, 138, 110, 0.82) inset;
+  }
+
+  & .headerlogo {
+    display: flex;
+    justify-content: space-between;
+  }
+}

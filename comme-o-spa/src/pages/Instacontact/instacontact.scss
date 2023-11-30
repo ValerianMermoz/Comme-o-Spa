@@ -1,0 +1,27 @@
+.Instacontact {
+  min-height: 100vh;
+  background-color: #c68f7b;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .conteneurinsta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-items : center;
+
+    img {
+      width: 400px;
+      border-radius: 25px;
+    }
+    .insta1 { grid-area: 1 / 1 / 2 / 2; }
+.insta4{ grid-area: 1 / 2 / 2 / 3; }
+.insta3 { grid-area: 1 / 3 / 2 / 4; }
+.insta1 { grid-area: 2 / 1 / 3 / 2; }
+.insta5 { grid-area: 2 / 2 / 3 / 3; }
+.insta6 { grid-area: 2 / 3 / 3 / 4; }
+  }
+}

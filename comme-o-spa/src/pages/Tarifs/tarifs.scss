@@ -1,0 +1,106 @@
+.Tarifs {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://i.goopics.net/wkz3h3.png");
+  background-size: 100%;
+  position: relative;
+}
+.tarifsbox {
+  display: flex;
+  gap: 50px;
+}
+
+.tarifsconteneur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titretarif {
+  & h2 {
+    color: #7a6659;
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+  }
+  & p {
+    color: #7a6659;
+    font-family: "Dancing Script", cursive;
+
+    padding-bottom: 20px;
+  }
+}
+
+.corpsbox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  order: 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fdfdfd;
+}
+.titrecorps {
+  color: #7a6659;
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+}
+.massagesbox {
+  order: 1;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #fdfdfd;
+}
+.titremassages {
+  color: #7a6659;
+  font-size: 32px;
+  font-family: "Dancing Script", cursive;
+}
+
+.cardmenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #7a6659;
+  text-align: start;
+  padding-left: 20px;
+  & h3 {
+    color: #7a6659;
+    font-size: 24px;
+    font-family: Helvetica;
+
+  }
+  & p {
+    color: #7a6659;
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica;
+  }
+}
+
+.prix {
+  display: flex;
+  align-items: start;
+  padding-right: 20px;
+
+  & h3 {
+    color: #7a6659;
+    font-size: 24px;
+    font-family: Helvetica;
+  }
+}

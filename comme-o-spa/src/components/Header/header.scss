@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #c68f7b;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.Logo {
+  position: relative;
+  height: 150px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right : 40px;
+}
+
+.headernav {
+  display: flex;
+  gap: 40px;
+
+  & .link {
+    font-size: 22px;
+    color : #493929;
+    text-decoration: none;
+  }
+  & .link:hover {
+    text-decoration: underline;
+    text-underline-offset: 23px;
+  }
+  & .link.actif {
+    text-decoration: underline;
+    text-underline-offset: 23px;
+  }
+}
+
+.header-transparent {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display : flex;
+  background-color: transparent;
+  justify-content:space-between;
+}
+
+.telephone {
+  width : 20px;
+}

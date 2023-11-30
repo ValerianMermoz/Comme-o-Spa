@@ -1,0 +1,47 @@
+.Presta {
+  min-height: 100vh;
+  padding-top: 30px;
+  background: rgb(198, 143, 123);
+  background: linear-gradient(
+    180deg,
+    rgba(198, 143, 123, 1) 35%,
+    rgba(175, 147, 128, 1) 90%
+  );
+
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+.imgpresta {
+  width: 300px;
+  border-radius: 0.3em;
+  background-size : cover;
+  background-position : center center;
+  background-repeat : no-repeat;
+}
+
+.conteneurpresta {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  border-radius: 0.5em;
+  & .boxpresta {
+    background-color: white;
+    padding: 40px 40px 0px 40px;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 20px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 20px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    box-shadow: 20px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  }
+
+  h3,
+  p {
+    font-weight: 700;
+    color: #493929;
+  }
+}
