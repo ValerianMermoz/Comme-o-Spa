@@ -3,23 +3,63 @@
 }
 
 .carousel .overlay {
-  width: 100%;
+  min-width: 50%;
   position: absolute;
-  bottom: 30%;
-  right: 30%;
+  bottom: 20%;
+  right: 40%;
   transform: translateY(-50%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #fdfdfd;
+  opacity: 0.8;
+  border-radius: 20px;
+  @include mobile-only {
+    bottom : 0%;
+    right : 0%;
+     }
 }
 
 .carousel .overlay__title {
-  font-size: 48px;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  text-shadow:1px 1px 6px rgba(53,54,41,0.6);
 }
 
 .carousel .overlay__text {
-  font-size: 24px;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  color : #493929;
+  font-family: Dancing Script;
+  font-size : 22px;
+  text-shadow:1px 1px 6px rgba(53,54,41,0.6);
 }
 
 .imgcarousel {
-  -webkit-filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%);
   background-size: cover;
   filter: grayscale(100%);
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }

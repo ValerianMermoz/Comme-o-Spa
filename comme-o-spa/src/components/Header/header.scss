@@ -1,34 +1,41 @@
-.header {
+.header,
+.header-transparent {
   position: fixed;
   width: 100%;
-  background-color: #c68f7b;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  z-index: 10;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+
+  @include mobile-only {
+    background-color: transparent;
+  }
 }
 .Logo {
   position: relative;
   height: 150px;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-right : 40px;
+  @include mobile-only {
+    height: 60px;
+  }
 }
 
 .headernav {
   display: flex;
   gap: 40px;
+  align-items: center;
+  padding-right: 20px;
+  @include mobile-only {
+    gap: 15px;
+  }
 
   & .link {
     font-size: 22px;
-    color : #493929;
+
+    color: #ffffff;
     text-decoration: none;
+    @include mobile-only {
+      font-size: 10px;
+    }
   }
   & .link:hover {
     text-decoration: underline;
@@ -40,17 +47,33 @@
   }
 }
 
-.header-transparent {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  display : flex;
-  background-color: transparent;
-  justify-content:space-between;
+.telephone {
+  height: 25px;
 }
 
-.telephone {
-  width : 20px;
+.menu .numero {
+  color: #493929;
+}
+
+.number {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: 2px solid #ffffff;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+.number:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.numero {
+  font-family: Avenir;
+  font-weight: 600;
+  @include mobile-only {
+    font-size: 10px;
+  }
 }

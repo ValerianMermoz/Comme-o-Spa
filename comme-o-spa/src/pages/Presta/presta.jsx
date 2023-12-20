@@ -1,7 +1,7 @@
 const Presta = () => {
   return (
     <div className="Presta">
-      <h2>
+      <h2 className="Prestatitre">
         Ce que je <span>vous</span> propose,
       </h2>
 
@@ -10,30 +10,21 @@ const Presta = () => {
           <img
             src="https://i.goopics.net/i4rri8.png"
             className="imgpresta"
-            alt="soins corps"
+            alt="massage du dos"
           ></img>
           <div className="contentboxpresta">
             <h3>Soin du corps</h3>
-            <p>Description</p>
+            <h3>Description</h3>
           </div>
-        </div>
-        <div className="boxpresta">
-          <img
-            src="https://i.goopics.net/wu1huq.png"
-            className="imgpresta"
-            alt=" soins visage"
-          ></img>
-          <h3>Soin du visage</h3>
-          <p>Description</p>
         </div>
         <div className="boxpresta">
           <img
             src="https://i.goopics.net/w7vxhm.png"
             className="imgpresta"
-            alt="massages"
+            alt="huiles essentielles"
           ></img>
           <h3>Massages</h3>
-          <p>Description</p>
+          <h3>Description</h3>
         </div>
       </div>
     </div>

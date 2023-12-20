@@ -1,5 +1,6 @@
 .Presta {
   min-height: 100vh;
+  min-width : 100%;
   padding-top: 30px;
   background: rgb(198, 143, 123);
   background: linear-gradient(
@@ -7,29 +8,44 @@
     rgba(198, 143, 123, 1) 35%,
     rgba(175, 147, 128, 1) 90%
   );
-
+  @include mobile-only {
+    padding-bottom : 100px;
+    }
 
   & span {
     font-weight: 700;
   }
 }
 
+.Prestatitre {
+  font-family: Dancing Script;
+  font-size : 40px;
+  color : #FFFF;
+}
+
 .imgpresta {
   width: 300px;
   border-radius: 0.3em;
-  background-size : cover;
-  background-position : center center;
-  background-repeat : no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include mobile-only {
+    width : 200px;
+    }
 }
 
 .conteneurpresta {
   padding-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-around;
   align-items: center;
   border-radius: 0.5em;
+  @include mobile-only {
+    flex-direction : column;
+    align-items:center;
+    gap : 80px;
+    }
   & .boxpresta {
     background-color: white;
     padding: 40px 40px 0px 40px;
@@ -37,6 +53,11 @@
     -webkit-box-shadow: 20px 29px 38px -15px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 20px 29px 38px -15px rgba(0, 0, 0, 0.43);
     box-shadow: 20px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    transition: transform 1s;
+    cursor : pointer;
+    @include mobile-only {
+      width : 50%;
+      }
   }
 
   h3,
@@ -45,3 +66,20 @@
     color: #493929;
   }
 }
+
+img {
+  transition: transform 1s;
+}
+
+.boxpresta:hover img{
+  transform: scale(1.1);
+}
+
+.boxpresta:hover {
+  filter: grayscale(0.5);
+}
+.boxpresta:hover {
+  transform: scale(1.2);
+}
+
+

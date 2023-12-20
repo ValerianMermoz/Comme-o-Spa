@@ -1,4 +1,6 @@
+@import './mixins.scss';
 @import './index.scss';
+
 
 @import './components/Footer/footer.scss';
 @import './components/Header/header.scss';
@@ -12,3 +14,4 @@
 @import './pages/Massages/massages.scss';
 @import './pages/Tarifs/tarifs.scss';
 @import './pages/Mentions/mentions.scss';
+

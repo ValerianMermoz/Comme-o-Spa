@@ -8,30 +8,30 @@ function Slider() {
         {
             id: 1,
             image: `https://i.goopics.net/fql4j9.jpg`,
-            title: "Le soin directement chez vous",
-            text: `Détendez-vous et profitez`
+            title: "Massage relaxant à domicile",
+            text: `Modelage à visée non médicale / Réservé pour clientèle féminine`
         },
         {
             id: 2,
-            image: ``,
-            title: "Titre du slider 2",
-            text: `Description de la slide 2`
+            image: `https://i.goopics.net/xhnnbb.png`,
+            title: "Test",
+            text: `Le medical`
         },
         {
             id: 3,
-            image: ``,
-            title: "Titre du slider 3",
-            text: `Description de la slide 3`
+            image: `https://i.goopics.net/vvtykx.png`,
+            title: "Test",
+            text: `Test`
         },
     ]
     return (
-        <Carousel  showIndicators={false} showStatus={false} showThumbs={false} showArrows={false} >
+        <Carousel showIndicators={false} showStatus={false} showThumbs={false} showArrows={false} autoPlay={true} interval={4000} infiniteLoop={true} stopOnHover={false} animationHandler={"fade"} >
         {datas.map(slide => (
             <div key={slide.id}>
                 <img src={slide.image} className="imgcarousel" alt='' />
                 <div className="overlay">
-                    <h2 className="overlay__title">{slide.title}</h2>
-                    <p className="overlay__text">{slide.text}</p>
+                    <h1 className="overlay__title">{slide.title}</h1>
+                    <h2 className="overlay__text">{slide.text}</h2>
                 </div>
             </div>
         ))}

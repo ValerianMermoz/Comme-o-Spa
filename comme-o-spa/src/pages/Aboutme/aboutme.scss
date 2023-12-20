@@ -11,15 +11,23 @@
   background: linear-gradient(
     180deg,
     rgba(175, 147, 128, 1) 20%,
-    rgba(198, 143, 123, 1) 100%
+    rgba(145, 102, 86) 100%
   );
+  @include mobile-only {
+    flex-direction : column;
+    justify-content : unset;
+    }
 }
 .conteneurimgaboutme {
-  background-image: url("https://i.goopics.net/ng6tci.jpg");
+  background-image: url("https://i.goopics.net/63cgu7.png");
   background-size: cover;
-  width: 500px;
+  min-width: 500px;
   height: 700px;
   position: relative;
+  @include mobile-only {
+   height : 300px;
+   min-width : 300px;
+    }
 }
 
 .conteneurimgaboutme:before {
@@ -32,6 +40,12 @@
   height: 113%;
   z-index: -1;
   background-color: rgba(235, 226, 219, 0.7);
+  @include mobile-only {
+    left: -20px;
+    top: -20px;
+    width: 90%;
+    height: 100%;
+    }
 }
 .aboutmeimg {
   width: 400px;
@@ -46,9 +60,11 @@
   padding-bottom: 20px;
   padding-right: 20px;
   padding-left: 30px;
-  margin-right: 40px;
   background-color: #fdfdfd;
   opacity: 0.9;
+  @include mobile-only {
+    width : unset;
+     }
 
   & h2,
   h3,

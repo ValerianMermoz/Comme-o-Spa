@@ -8,11 +8,11 @@ const Tarifs = () => {
         </div>
         <div className="tarifsbox">
           <div className="corpsbox">
-            <div className="titrecorps">CORPS</div>
+            <div className="titrecorps">PRIX</div>
             <div className="cardmenu">
               <div className="cardtext">
-                <h3>Massage 30 min</h3>
-                <p>concerne massage sur-mesure</p>
+                <h3>Massage 30 min*</h3>
+                <p>*Concerne massage sur-mesure</p>
               </div>
               <div className="prix">
                 <h3>55 €</h3>
@@ -28,16 +28,17 @@ const Tarifs = () => {
             </div>
             <div className="cardmenu">
               <div className="cardtext">
-                <h3>Massage 1 H</h3>
+                <h3>Massage 60 min</h3>
               </div>
               <div className="prix">
-                <h3>65 €</h3>
+                <h3>75 €</h3>
               </div>
             </div>
             <div className="cardmenu">
               <div className="cardtext">
-                <h3>Massage 1 H 30</h3>
-                <p>Hors Suédois et massage femme enceinte</p>
+                <h3>Massage 90 min**</h3>
+                <p>**Hors massage Vitaly, Femme enceinte</p>
+                <p>et Sur-mesure</p>
               </div>
               <div className="prix">
                 <h3>95 €</h3>
@@ -49,68 +50,60 @@ const Tarifs = () => {
             <div className="cardmenu">
               <div className="cardtext">
                 <h3>Massage D-STRESS</h3>
-                <p>45 MIN / 1H / 1H30</p>
                 <p>
                   Massage apaisant type californien, il vise à réduire le stress
-                  et l'anxiété pour une profonde relaxation
+                  et l'anxiété pour une profonde relaxation.
                 </p>
-              </div>
-              <div className="prix">
-                <h3>65 € / 75 € / 95 €</h3>
               </div>
             </div>
             <div className="cardmenu">
               <div className="cardtext">
                 <h3>Massage VITALY</h3>
-                <p>45 MIN / 1H / 1H30</p>
-                <p>Massage dynamique et décontracant inspiré du Suédois.</p>
+                <p>Massage dynamique et décontractant inspiré du Suédois.</p>
                 <p>Allie douceur et tonicité. Apprécié par les sportives.</p>
-              </div>
-              <div className="prix">
-                <h3>65 € / 75 €</h3>
               </div>
             </div>
             <div className="cardmenu">
               <div className="cardtext">
                 <h3>Massage LOMI-LOMI</h3>
-                <p>45 MIN / 1H / 1H30</p>
                 <p>
                   Véritable invitation au voyage aux odeurs de monoï avec des
-                  manoeuvres enveloppantes. Facilite au lâcher prise pour une
+                  manœuvres enveloppantes. Facilite au lâcher prise pour une
                   relaxation profonde.
                 </p>
-              </div>
-              <div className="prix">
-                <h3>65 € / 75 € / 95 €</h3>
               </div>
             </div>
             <div className="cardmenu">
               <div className="cardtext">
                 <h3>Massage INTUITIF SIGNATURE</h3>
-                <p>45 MIN / 1H / 1H30</p>
                 <p>
                   Massage anti-stress personnalisé à l'écoute de vos besoins et
-                  ressentis, Mélange de différentes techniques (ayurvédique /
-                  balinais / oriental ...)
+                  ressentis. Mélange de différentes techniques (ayurvédique /
+                  balinais / oriental ...).
                 </p>
-              </div>
-              <div className="prix">
-                <h3>65 € / 75 € / 95 €</h3>
               </div>
             </div>
             <div className="cardmenu">
               <div className="cardtext">
                 <h3>Massage SUR-MESURE</h3>
                 <p>
-                  Choisissez 1 ou plusieurs zones de votre choix (dos, jambes,
-                  visage, mains ...)
+                  Choisissez 1 ou 2 zones de votre choix (dos, jambes,
+                  visage, mains ...). Durée au choix de 30 ou 45 minutes.
                 </p>
               </div>
-              <div className="prix">
-                <h3>55 € / 65 €</h3>
+            </div>
+            <div className="cardmenu">
+              <div className="cardtext">
+                <h3>Massage FUTURE MAMAN</h3>
+                <p>
+                  Reservé aux futures mamans (+4 mois), massage doux pour réduire la fatigue et les tensions.
+                </p>
               </div>
             </div>
           </div>
+        </div>
+        <div className="tarifbottom">
+          <h3>Uniquement en espèces</h3>
         </div>
       </div>
     </div>

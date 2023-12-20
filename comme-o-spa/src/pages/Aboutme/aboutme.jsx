@@ -6,7 +6,7 @@ const Aboutme = () => {
       <div className="conteneurimgaboutme">
       </div>
       <div className="conteneurtextaboutme">
-        <h2>Qui suis-je</h2>
+        <h2>Qui suis-je ?</h2>
         <p>
           Je m'apelle Olivia et je suis SPA Praticienne diplômée depuis 2011.
           Les soins proposés sont le résultat de mes 7 années d'expérience en

@@ -1,6 +1,34 @@
 .Mentions {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    background-color: #bb9191;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: #bb9191;
+}
+
+.Mentionstext {
+  width: 40%;
+  left: 10%;
+  bottom: 15%;
+
+  position: absolute;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #fdfdfd;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  @include mobile-only {
+    width : 80%;
+    left : 5%;
+  }
+
+  & h3,
+  p, a {
+    color: #493929;
+  }
 }
