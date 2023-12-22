@@ -14,14 +14,14 @@ function Slider() {
         {
             id: 2,
             image: `https://i.goopics.net/xhnnbb.png`,
-            title: "Test",
-            text: `Le medical`
+            title: "Sur rendez-vous",
+            text: `Le vendredi et le week-end`
         },
         {
             id: 3,
             image: `https://i.goopics.net/vvtykx.png`,
-            title: "Test",
-            text: `Test`
+            title: "Réservez votre soin",
+            text: `Avec une Esthéticienne SPA-Praticienne qualifiée`
         },
     ]
     return (

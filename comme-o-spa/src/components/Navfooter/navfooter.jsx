@@ -1,14 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.png";
+import email from "../../assets/email.png";
 
 const Navfooter = () => {
   return (
     <div className="headerlogo">
-      <img src={Logo} className="Logo" alt="logo_footer" />
+      <a href="mailto:commeospa07@gmail.com">
+        {" "}
+        <img src={email} className="email" alt="lien pour m'envoyer un email" />
+      </a>
       <nav className="footernav">
-        <Link>Télécharger ma carte de visite</Link>
-        <Link to="/Mentions">Mentions légales</Link>
+        <a className="linkfooter" href="./Flyer.pdf" target="_blank">
+          Télécharger ma carte de visite
+        </a>
+        <Link to="/Mentions" className="linkfooter">
+          Mentions légales
+        </Link>
       </nav>
     </div>
   );

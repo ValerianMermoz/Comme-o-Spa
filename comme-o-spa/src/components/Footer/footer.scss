@@ -1,5 +1,5 @@
 .Footer {
-  background-color: #794C3C;
+  background-color: #794c3c;
   & .iconesfooter {
     min-width: 100%;
     min-height: 100%;
@@ -10,22 +10,25 @@
     justify-content: space-around;
     align-items: center;
     @include mobile-only {
-      flex-direction : column;
-         }
+      flex-direction: column;
+      justify-content : space-evenly;
+    }
 
     & .iconef {
       width: 90px;
+      opacity: 0;
+      transform: translateY(-30px);
       @include mobile-only {
-        width : 50px;
-         }
+        width: 50px;
+      }
     }
 
     & h3 {
       font-family: Dancing Script;
-      text-shadow:1px 1px 6px rgba(53,54,41,0.6);
+      text-shadow: 1px 1px 6px rgba(53, 54, 41, 0.6);
       @include mobile-only {
-      font-size : 16px;
-         }
+        font-size: 16px;
+      }
     }
   }
   .imgfooter {
@@ -45,10 +48,27 @@
     box-shadow: 10px 10px 36px 15px rgba(207, 138, 110, 0.82) inset;
     -webkit-box-shadow: 10px 10px 36px 15px rgba(207, 138, 110, 0.82) inset;
     -moz-box-shadow: 10px 10px 36px 15px rgba(207, 138, 110, 0.82) inset;
+    @include mobile-only {
+      background-image: url("https://i.goopics.net/bphzra.jpg");
+       display: block;  min-height: 100%;  inset: 0px;
+       background-size : unset;
+       background-attachment:unset;
+    }
   }
 
   & .headerlogo {
     display: flex;
     justify-content: space-around;
+    padding-top : 30px;
   }
 }
+.reveal-visible {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.reveal-visible2 {
+  -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+

@@ -14,9 +14,9 @@
     rgba(145, 102, 86) 100%
   );
   @include mobile-only {
-    flex-direction : column;
-    justify-content : unset;
-    }
+    flex-direction: column;
+    justify-content: unset;
+  }
 }
 .conteneurimgaboutme {
   background-image: url("https://i.goopics.net/63cgu7.png");
@@ -25,9 +25,9 @@
   height: 700px;
   position: relative;
   @include mobile-only {
-   height : 300px;
-   min-width : 300px;
-    }
+    height: 300px;
+    min-width: 300px;
+  }
 }
 
 .conteneurimgaboutme:before {
@@ -45,12 +45,13 @@
     top: -20px;
     width: 90%;
     height: 100%;
-    }
+  }
 }
 .aboutmeimg {
   width: 400px;
   z-index: 100000;
 }
+
 .conteneurtextaboutme {
   width: 50%;
   text-align: start;
@@ -61,17 +62,23 @@
   padding-right: 20px;
   padding-left: 30px;
   background-color: #fdfdfd;
-  opacity: 0.9;
+  opacity: 0;
+  transform: translateY(-30px);
   @include mobile-only {
-    width : unset;
-     }
-
-  & h2,
+    width: unset;
+  }
+  h2,
   h3,
   p {
     color: #493929;
   }
   p {
-    line-height : 1.5;
+    line-height: 1.5;
   }
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.5s cubic-bezier(0.5, 0, 0, 1);
 }

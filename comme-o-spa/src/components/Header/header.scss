@@ -1,21 +1,20 @@
-.header,
-.header-transparent {
+.header {
   position: fixed;
   width: 100%;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+  background-color: #794c3c;
   @include mobile-only {
-    background-color: transparent;
+   justify-content : unset;
   }
 }
 .Logo {
   position: relative;
-  height: 150px;
+  height: 75px;
   @include mobile-only {
-    height: 60px;
+    height: 35px;
   }
 }
 
@@ -26,29 +25,51 @@
   padding-right: 20px;
   @include mobile-only {
     gap: 15px;
+    padding : 0;
   }
 
   & .link {
     font-size: 22px;
-
+    position: relative;
     color: #ffffff;
     text-decoration: none;
     @include mobile-only {
-      font-size: 10px;
+      font-size: 9px;
     }
   }
-  & .link:hover {
-    text-decoration: underline;
-    text-underline-offset: 23px;
-  }
+
   & .link.actif {
     text-decoration: underline;
-    text-underline-offset: 23px;
+    text-underline-offset: 18px;
+    @include mobile-only {
+      text-underline-offset: 10px;
+    }
+  }
+  & .link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 38px;
+    left: 0;
+    background-color: #ffffff;
+    transition: all 280ms 0ms ease-in-out;
+    transform: scaleX(0);
+
+    @include mobile-only {
+      top: 19px;
+    }
+  }
+  & .link:hover::after {
+    transform: scaleX(1);
   }
 }
 
 .telephone {
   height: 25px;
+  @include mobile-only {
+    height : 15px;
+  }
 }
 
 .menu .numero {
@@ -58,22 +79,46 @@
 .number {
   display: flex;
   flex-direction: row;
+  position: relative;
+  width: 140px;
   gap: 5px;
   border: 2px solid #ffffff;
   padding-right: 10px;
   padding-left: 10px;
   align-items: center;
-}
-.number:hover {
-  opacity: 0.5;
-  transition: all 0.5s ease;
+  overflow: hidden;
+  text-decoration: none;
   cursor: pointer;
+  justify-content : center;
+  @include mobile-only {
+    width: 100px;
+    padding : 0;
+  }
+}
+
+.number::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #af9380;
+  border-radius: 50% 50% 0% 0%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.number:hover::before {
+  top: 0px;
+  border-radius: 0;
 }
 
 .numero {
   font-family: Avenir;
   font-weight: 600;
+  color: #ffffff;
   @include mobile-only {
-    font-size: 10px;
+    font-size: 9px;
   }
 }

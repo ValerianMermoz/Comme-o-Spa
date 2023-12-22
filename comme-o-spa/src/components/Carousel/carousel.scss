@@ -14,7 +14,8 @@
   border-radius: 20px;
   @include mobile-only {
     bottom : 0%;
-    right : 0%;
+    right : 25%;
+    width : 200px;
      }
 }
 
@@ -22,6 +23,9 @@
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   text-shadow:1px 1px 6px rgba(53,54,41,0.6);
+  @include mobile-only {
+    font-size : 20px;
+     }
 }
 
 .carousel .overlay__text {
@@ -31,6 +35,9 @@
   font-family: Dancing Script;
   font-size : 22px;
   text-shadow:1px 1px 6px rgba(53,54,41,0.6);
+  @include mobile-only {
+    font-size : 16px;
+     }
 }
 
 .imgcarousel {

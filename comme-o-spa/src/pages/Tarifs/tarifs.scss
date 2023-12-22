@@ -3,36 +3,30 @@
   min-width: 100%;
   background-image: url("https://i.goopics.net/wkz3h3.png");
   background-size: 100%;
-  padding-top : 200px;
   position: relative;
-  @include mobile-only {
-    padding-top : 0;
-   }
 }
 .tarifsbox {
   display: flex;
   gap: 50px;
   @include mobile-only {
-   flex-direction : column;
+    flex-direction: column;
   }
 }
 
 .tarifsconteneur {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   @include mobile-only {
-  position : unset;
-  transform : unset;
+    position: unset;
+    padding-top : 100px;
+    transform: unset;
   }
 }
 
 .titretarif {
 
-  @include mobile-only {
-    padding-top : 100px;
-    }
 
   & h2 {
     color: #7a6659;
@@ -47,7 +41,7 @@
 }
 
 .corpsbox {
-  width : 500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -58,8 +52,8 @@
   padding-bottom: 20px;
   background-color: #fdfdfd;
   @include mobile-only {
-    width : 100%;
-   }
+    width: 100%;
+  }
 }
 .titrecorps {
   color: #7a6659;
@@ -121,12 +115,11 @@
 }
 
 .tarifbottom {
-  padding-top : 25px;
-  padding-bottom : 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   & h3 {
     color: #7a6659;
     font-family: "Dancing Script", cursive;
     margin: 0;
-
   }
 }
