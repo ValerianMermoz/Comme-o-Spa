@@ -8,12 +8,13 @@ import Tarifs from "./pages/Tarifs/tarifs";
 import Massages from "./pages/Massages/massages";
 import Mentions from "./pages/Mentions/mentions";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
     <Router>
-        <Header />
+      <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Tarifs" element={<Tarifs />} />

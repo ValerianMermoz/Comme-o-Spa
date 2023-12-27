@@ -1,14 +1,18 @@
 .Tarifs {
   min-height: 100vh;
   min-width: 100%;
-  background-image: url("https://i.goopics.net/wkz3h3.png");
-  background-size: 100%;
+  background-image: url("https://i.postimg.cc/g2756X3g/fond-tarif.webp");
+  background-size: cover;
+  background-position:center;
   position: relative;
 }
 .tarifsbox {
   display: flex;
   gap: 50px;
   @include mobile-only {
+    flex-direction: column;
+  }
+  @include tablette-only {
     flex-direction: column;
   }
 }
@@ -23,11 +27,14 @@
     padding-top : 100px;
     transform: unset;
   }
+  @include tablette-only {
+    position: unset;
+    padding-top : 100px;
+    transform: unset;
+  }
 }
 
 .titretarif {
-
-
   & h2 {
     color: #7a6659;
     font-family: "Dancing Script", cursive;
@@ -53,6 +60,9 @@
   background-color: #fdfdfd;
   @include mobile-only {
     width: 100%;
+  }
+  @include tablette-only {
+  width : 100%;
   }
 }
 .titrecorps {
@@ -92,6 +102,12 @@
   color: #7a6659;
   text-align: start;
   padding-left: 20px;
+  @include mobile-only {
+    white-space : unset;
+  }
+  @include tablette-only {
+    white-space : unset;
+  }
   & h3 {
     color: #7a6659;
     font-family: Helvetica;
@@ -105,7 +121,7 @@
 
 .prix {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding-right: 20px;
 
   & h3 {

@@ -1,25 +1,28 @@
 import React, { useRef, useEffect, useState } from "react";
 
 function Aboutme () {
-  const targetRef: any = useRef(null);
+  const targetRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const localTargetRef = targetRef.current;
+
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1
+      threshold: 0.1,
     };
 
-    const observer = new IntersectionObserver((entries: any) => {
+    const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
+
       setIsVisible(entry.isIntersecting);
     }, options);
 
-    if (targetRef.current) observer.observe(targetRef.current);
+    if (localTargetRef) observer.observe(localTargetRef);
 
     return () => {
-      if (targetRef.current) observer.unobserve(targetRef.current);
+      if (localTargetRef) observer.unobserve(localTargetRef);
     };
   }, [targetRef]);
   return (

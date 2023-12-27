@@ -9,7 +9,7 @@ const Mentions = () => {
         <p>Adresse : 07300 GLUN</p>
         <p>Hébergeur du site : OVHcloud</p>
         <p>Adresse de l'hébergeur : 2 rue Kellermann - 59100 ROUBAIX</p>
-        <p>Réalisation : <a href="https://www.valerianmermoz.fr/" target="_blank">www.valerianmermoz.fr</a></p>
+        <p>Réalisation : <a href="https://www.valerianmermoz.fr/" target="_blank" rel="noreferrer">www.valerianmermoz.fr</a></p>
       </div>
     </div>
   );

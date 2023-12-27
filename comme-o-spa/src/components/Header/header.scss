@@ -7,14 +7,19 @@
   justify-content: space-around;
   background-color: #794c3c;
   @include mobile-only {
-   justify-content : unset;
+   justify-content : center;
   }
+  @include tablette-only {
+    justify-content : center;
+   }
 }
 .Logo {
   position: relative;
   height: 75px;
+  width : 200px;
   @include mobile-only {
     height: 35px;
+    width : 75px;
   }
 }
 
@@ -27,6 +32,10 @@
     gap: 15px;
     padding : 0;
   }
+  @include tablette-only {
+    gap: 20px;
+    padding : 0;
+  }
 
   & .link {
     font-size: 22px;
@@ -36,6 +45,9 @@
     @include mobile-only {
       font-size: 9px;
     }
+    @include tablette-only {
+      font-size: 15px;
+    }
   }
 
   & .link.actif {
@@ -43,6 +55,9 @@
     text-underline-offset: 18px;
     @include mobile-only {
       text-underline-offset: 10px;
+    }
+    @include tablette-only {
+      text-underline-offset: 24px;
     }
   }
   & .link::after {
@@ -67,8 +82,10 @@
 
 .telephone {
   height: 25px;
+  width : 25px;
   @include mobile-only {
     height : 15px;
+    width : 15px;
   }
 }
 
@@ -120,5 +137,8 @@
   color: #ffffff;
   @include mobile-only {
     font-size: 9px;
+  }
+  @include tablette-only {
+    font-size: 15px;
   }
 }

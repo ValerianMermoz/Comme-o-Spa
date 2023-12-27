@@ -16,10 +16,16 @@
   @include mobile-only {
     flex-direction: column;
     justify-content: unset;
+    padding-top: 100px;
+  }
+  @include tablette-only {
+    flex-direction: column;
+    justify-content: unset;
+    padding-top: 100px;
   }
 }
 .conteneurimgaboutme {
-  background-image: url("https://i.goopics.net/63cgu7.png");
+  background-image: url("https://i.postimg.cc/jSLDxmsG/aboutme.webp");
   background-size: cover;
   min-width: 500px;
   height: 700px;

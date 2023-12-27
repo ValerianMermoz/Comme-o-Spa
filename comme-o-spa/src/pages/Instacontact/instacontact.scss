@@ -21,8 +21,12 @@
 
 .insta1,.insta2,.insta3,.insta4,.insta5,.insta6 {
   width: 400px;
+  height : auto;
   border-radius: 25px;
   @include mobile-only {
+    width: 200px;
+  }
+  @include tablette-only {
     width: 200px;
   }
 }

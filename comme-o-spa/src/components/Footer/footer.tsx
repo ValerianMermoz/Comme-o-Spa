@@ -2,25 +2,28 @@ import Navfooter from "../Navfooter/navfooter";
 import React, { useRef, useEffect, useState } from "react";
 
 function Footer () {
-  const targetRef: any = useRef(null);
+  const targetRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const localTargetRef = targetRef.current;
+
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1
+      threshold: 0.1,
     };
 
-    const observer = new IntersectionObserver((entries: any) => {
+    const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
+
       setIsVisible(entry.isIntersecting);
     }, options);
 
-    if (targetRef.current) observer.observe(targetRef.current);
+    if (localTargetRef) observer.observe(localTargetRef);
 
     return () => {
-      if (targetRef.current) observer.unobserve(targetRef.current);
+      if (localTargetRef) observer.unobserve(localTargetRef);
     };
   }, [targetRef]);
   return (
@@ -28,7 +31,7 @@ function Footer () {
       <div className="iconesfooter" ref={targetRef}>
         <div className="boxfooter">
           <img
-            src="https://i.goopics.net/5af8wi.png"
+            src="https://i.postimg.cc/K86Bdxn9/home.webp"
             className={`iconef ${isVisible ? "reveal-visible" : ""}`}
             alt="icone maison" 
           />
@@ -36,7 +39,7 @@ function Footer () {
         </div>
         <div className="boxfooter">
           <img
-            src="https://i.goopics.net/n7xqm1.png"
+            src="https://i.postimg.cc/wj8bk81p/leaf.webp"
             className={`iconef ${isVisible ? "reveal-visible" : ""}`}
             alt="icone bio"
           />
@@ -44,7 +47,7 @@ function Footer () {
         </div>
         <div className="boxfooter">
           <img
-            src="https://i.goopics.net/krhrfe.png"
+            src="https://i.postimg.cc/X7DwkwX6/bubble.webp"
             className={`iconef ${isVisible ? "reveal-visible" : ""}`}
             alt="icone bulle"
           />

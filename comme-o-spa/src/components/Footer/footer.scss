@@ -16,10 +16,12 @@
 
     & .iconef {
       width: 90px;
+      height : 90px;
       opacity: 0;
       transform: translateY(-30px);
       @include mobile-only {
         width: 50px;
+        height : 50px;
       }
     }
 
@@ -29,11 +31,16 @@
       @include mobile-only {
         font-size: 16px;
       }
+      @include tablette-only {
+        font-size: 20px;
+      }
     }
   }
   .imgfooter {
     position: relative;
     background-image: url("https://i.goopics.net/61x66n.jpg");
+    max-width : 100%;
+    height : auto;
 
     /* Une hauteur variable */
     height: 100vh;
@@ -56,11 +63,6 @@
     }
   }
 
-  & .headerlogo {
-    display: flex;
-    justify-content: space-around;
-    padding-top : 30px;
-  }
 }
 .reveal-visible {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;

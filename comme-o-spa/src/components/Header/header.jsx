@@ -1,4 +1,3 @@
-import Logo from "../../assets/Headerlogo.png";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -9,7 +8,7 @@ const Header = () => {
   }
   return (
     <div className="header" id="header">
-      <img src={Logo} className="Logo" alt="logo_header" />
+      <img src="https://i.postimg.cc/rFtPWFFj/Headerlogo.webp" className="Logo" alt="logo_header" />
 
       <nav className="headernav">
         <Link

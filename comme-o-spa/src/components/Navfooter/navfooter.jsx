@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import email from "../../assets/email.png";
+
 
 const Navfooter = () => {
   return (
-    <div className="headerlogo">
+    <div className="footerconteneur">
       <a href="mailto:commeospa07@gmail.com">
         {" "}
-        <img src={email} className="email" alt="lien pour m'envoyer un email" />
+        <img src="https://i.postimg.cc/52Y876FY/email.webp" className="email" alt="lien pour m'envoyer un email" />
       </a>
       <nav className="footernav">
         <a className="linkfooter" href="./Flyer.pdf" target="_blank">

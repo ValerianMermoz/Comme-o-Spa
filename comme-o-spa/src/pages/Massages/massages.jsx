@@ -4,12 +4,13 @@ const Massages = () => {
       <div className="Textmassages">
         <h3 className="titremassage">Comme se déroule un rendez-vous :</h3>
         <p className="textmassage1">
-          Basé à Glun, Je me déplace dans un rayon de 25 minutes avec ma table de massage ainsi que tout le nécessaire
-          pour la prestation (serviettes, musiques,huiles..). Nous pouvons nous
-          installer dans votre salon, sur votre terrasse ou encore dans votre
-          jardin si la météo le permet. Avant le début de chaque prestation,
-          nous prenons le temps d'évaluer ensemble le type de pression que vous
-          souhaitez, l'ajout d'huiles essentielles ou non, le type de musique.
+          Basé à Glun, Je me déplace dans un rayon de 25 minutes avec ma table
+          de massage ainsi que tout le nécessaire pour la prestation
+          (serviettes, musiques,huiles..). Nous pouvons nous installer dans
+          votre salon, sur votre terrasse ou encore dans votre jardin si la
+          météo le permet. Avant le début de chaque prestation, nous prenons le
+          temps d'évaluer ensemble le type de pression que vous souhaitez,
+          l'ajout d'huiles essentielles ou non, le type de musique.
         </p>
         <h3 className="titremassage">
           Tous les soins sont personnalisables, à l'exception de Lomi Lomi.

@@ -1,46 +1,66 @@
 .carousel {
   position: relative;
+  height: auto;
+  width: 100%;
 }
 
-.carousel .overlay {
-  min-width: 50%;
+.overlay {
+  height: auto;
+  min-width: auto;
   position: absolute;
   bottom: 20%;
-  right: 40%;
+  right: 50%;
   transform: translateY(-50%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   background-color: #fdfdfd;
   opacity: 0.8;
   border-radius: 20px;
+  padding: 30px;
   @include mobile-only {
-    bottom : 0%;
-    right : 25%;
-    width : 200px;
-     }
+    bottom: -10%;
+    right: 5%;
+    width: 200px;
+    padding: 0;
+  }
+
+  @include tablette-only {
+    bottom: 0%;
+    padding : 10px;
+    width: 400px;
+    right : 10%;
+  }
 }
 
 .carousel .overlay__title {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  text-shadow:1px 1px 6px rgba(53,54,41,0.6);
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  text-shadow: 1px 1px 6px rgba(53, 54, 41, 0.6);
   @include mobile-only {
-    font-size : 20px;
-     }
+    font-size: 18px;
+  }
+  @include tablette-only {
+    font-size: 26px;
+  }
 }
 
 .carousel .overlay__text {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  color : #493929;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  color: #493929;
   font-family: Dancing Script;
-  font-size : 22px;
-  text-shadow:1px 1px 6px rgba(53,54,41,0.6);
+  font-size: 22px;
+  text-shadow: 1px 1px 6px rgba(53, 54, 41, 0.6);
   @include mobile-only {
-    font-size : 16px;
-     }
+    font-size: 12px;
+  }
+  @include tablette-only {
+    font-size: 20px;
+  }
 }
 
 .imgcarousel {
+  width: 100%;
+  height: auto;
   -webkit-filter: grayscale(100%);
   background-size: cover;
   filter: grayscale(100%);
@@ -49,24 +69,24 @@
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
